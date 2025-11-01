@@ -33,6 +33,10 @@ body{
     background-color: var(--azul);
 }
 .navegacion-principal{
-    background-color: var(--azul);
+    
 }
+.navegacion-principal a{
+    background-color: var(--primario);
+    display: block;
 
+}
