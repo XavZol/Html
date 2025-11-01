@@ -1,22 +1,23 @@
 :root{
     --blanco: #ffffff;
     --obsuro: #212121;  
-    --primario: #FFC107;
-
+    --primario: rgba(255,193,7,1);
+    --secundario: #757575;
+    --azul: #0097A7;
 }
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 16px;
+     font-family: "Montserrat", sans-serif;
 }
 .titulo{
     text-align: center;
     color: var(--primario);
-    font-size: 3.8rem; /*1rem = 10px */
+    font-size: 3.8rem; 
+    font-weight: bold;
 }.titulo span{
     font-size: 2rem;
 }
-span{
-    color: #000 !important; /*Pasarse toda la especificidad sin importar lo demás*/
-}
+
