@@ -1,6 +1,11 @@
 {
+"crea un elemento": {
+    "prefix" : "ce",
+    "body" : "<$1>$2</$1>"
+},
+
 "crea un media querie": {
     "prefix" : "mq",
-    "body" : " @media (min-width: $1) {\n    $2\n} "
+    "body" : "@media (min-width: $1) {\n   $2\n}"
 }
-}
+};
