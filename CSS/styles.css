@@ -64,6 +64,10 @@ h1,h2,h3{
     font-size: 2rem;
     font-weight: bold;  
     border-radius: .6rem;
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
 }
 @media (min-width: 768px){
     .boton{
@@ -87,7 +91,7 @@ h1,h2,h3{
    /* flex-direction: column;
     align-items: center;  pone los elementos al centro y en columna */
 }
-@media (min-width: 480px){
+@media (min-width: 768px){
     .navegacion-principal{
         flex-direction: row;
         justify-content: space-between;
@@ -121,7 +125,6 @@ h1,h2,h3{
     background-color: rgb(0,0,0/60%);
     width: 100%;
     height: 100%;
-
     
     display: flex;
     flex-direction: column;
@@ -162,10 +165,75 @@ h1,h2,h3{
 .servicio .iconos {
     height: 15rem;
     width: 15rem;
-    background-color: #ada30a;
+    background-color: #e4d50c;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+.formulario {
+  width: 60rem 100%;
+  margin: 0 auto; /* centra horizontalmente */
+  display: block;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--secundario);
+  box-sizing: border-box;
+}
+.formulario fieldset {
+    border: none;
+    
+}
+.formulario legend {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--amarillo);
+}
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+    }
+.campo:nth-child(3),
+  .campo:nth-child(4) {
+    grid-column: 1 / 3;
+  }
+}
+.campo {
+    margin-bottom: 1rem;
+
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.Enviar input[value="Enviar"] {
+    color: var(--blanco);
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="email"],
+.campo textarea {
+    background-color: #c3d1e0;
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.Enviar .boton {
+    width: 100%;
+}
+.campo textarea {
+    height: 20rem;
+}
+
+/*<button type="submit" value="Enviar">Enviar</button>*/
