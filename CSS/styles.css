@@ -144,19 +144,24 @@ h3 {
 }
 
 .hero {
-    background-image: url(/users/skipy/desktop/fullstack/html/image/heros.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 550px;
-    position: relative;
+    background-image: url(/Users/Skipy/Desktop/Fullstack/Html/image/heros.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    position: relative; 
     margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+}
+
 .contenido-hero {
-    position: absolute;
+    
     background-color: rgba(0, 0, 0, .6);
     /*anterior que se va a cancelar*/
-    background-color: rgb(0, 0, 0/60%);
     width: 100%;
     height: 100%;
 
@@ -280,7 +285,7 @@ h3 {
 
 .Enviar input[class="boton"] {
     display: flex;
-    width: 203%;
+    width: 100%;
     text-align: center;
 }
 
