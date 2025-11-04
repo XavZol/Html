@@ -144,7 +144,7 @@ h3 {
 }
 
 .hero {
-    background-image: url(/Users/Skipy/Desktop/Fullstack/Html/image/heros.jpg);
+    background-image: url(../image/heros.jpg);
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center;
@@ -154,7 +154,7 @@ h3 {
 
 @media (min-width: 768px) {
     .hero {
-        height: 400px;
+        height: 450px;
     }
 }
 
